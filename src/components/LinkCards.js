@@ -4,15 +4,16 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { Button, CardActionArea, CardActions } from "@mui/material";
+import keyboard from "./imgs/keyboard.jpg";
 
 export default function LinkCards() {
   return (
-    <Card sx={{ maxWidth: 345 }}>
+    <Card sx={{ maxWidth: 340 }}>
       <CardActionArea>
         <CardMedia
           component="img"
           height="140"
-          image="../imgs/keyboard.jpg"
+          image={keyboard}
           alt="green iguana"
         />
         <CardContent>
