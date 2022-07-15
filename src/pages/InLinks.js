@@ -16,10 +16,14 @@ export default function InLinks() {
         <Box sx={{ marginTop: 10 }}>
           <Div>{"Links"}</Div>
           <Paper
-            width={"80%"}
             height={80}
             elevation={5}
-            sx={{ display: "flex", justifyContent: "center", padding: 5 }}
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              padding: 5,
+              width: "90%",
+            }}
           >
             <TabsPages />
           </Paper>
