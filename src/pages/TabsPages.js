@@ -53,6 +53,7 @@ export default function TabsPages() {
         bgcolor: "background.paper",
         display: "flex",
         height: "100%",
+        width: "100%",
       }}
     >
       <Tabs
@@ -72,7 +73,20 @@ export default function TabsPages() {
         <Tab label="Item Seven" {...a11yProps(6)} />
       </Tabs>
       <TabPanel value={value} index={0}>
-        <LinkCards />
+        <Box display="grid" gridTemplateColumns="repeat(12, 1fr)" gap={2}>
+          <Box gridColumn="span 6">
+            <LinkCards />
+          </Box>
+          <Box gridColumn="span 6">
+            <LinkCards />
+          </Box>
+          <Box gridColumn="span 6">
+            <LinkCards />
+          </Box>
+          <Box gridColumn="span 6">
+            <LinkCards />
+          </Box>
+        </Box>
       </TabPanel>
       <TabPanel value={value} index={1}>
         <LinkCards />
